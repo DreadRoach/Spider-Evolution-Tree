@@ -7,20 +7,20 @@ let modInfo = {
 
 	discordName: "",
 	discordLink: "",
-	initialStartPoints: new Decimal (10), // Used for hard resets and new players
-	offlineLimit: 1,  // In hours
+	initialStartPoints: new Decimal (8), // Used for hard resets and new players
+	offlineLimit: 0,  // In hours
 }
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.01",
+	num: "0.01a",
 	name: "the very beginning",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
 	<h3>v0.0</h3><br>
-		- Set name, ID, author, and point name.<br>
-		- Added stuff.`
+		- Set up first prestige layer.<br>
+		- Tweaked starting points and disabled offline time.
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
