@@ -20,7 +20,7 @@ let VERSION = {
 let changelog = `<h1>Changelog:</h1><br>
 	<h3>v0.0</h3><br>
 		- Set up first prestige layer.<br>
-		- Tweaked starting points and disabled offline time.
+		- Tweaked starting points and disabled offline time.`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
