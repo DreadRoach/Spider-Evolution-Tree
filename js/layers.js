@@ -6,13 +6,13 @@ addLayer("b", {
         unlocked: true,
 		points: new Decimal(0),
     }},
-    color: "#FFFFFF",
+    color: "#9e2121",
     requires: new Decimal(8), // Can be a function that takes requirement increases into account
-    resource: "bytes", // Name of prestige currency
-    baseResource: "bits", // Name of resource prestige is based on
+    resource: "meat", // Name of prestige currency
+    baseResource: "prey", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
-    exponent: 0.5, // Prestige currency exponent
+    exponent: 1, // Prestige currency exponent
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(1)
         return mult
@@ -22,12 +22,12 @@ addLayer("b", {
     },
     row: 0, // Row the layer is in on the tree (0 is the first row)
     hotkeys: [
-        {key: "b", description: "P: Reset for prestige points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
+        {key: "m", description: "M: Collect prey for meat", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     infoboxes: {
     intro: {
         title: "Hello, world!",
-        body() {return "You are a brand new piece of software designed to automate the production of computer code. Your creator has endowed you with the latest in digital hardware: an 8-bit microprocessor (!) and an entire kilobyte's worth of internal storage. Your duty is to prove that you can generate code with enough competency to match or exceed a human programmer. Good luck!" }
+        body() {return "You are a spider. To survive and grow, you need meat. Meat is obtained by hunting prey." }
     }
     },
     layerShown(){return true}

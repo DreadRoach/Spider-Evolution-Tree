@@ -1,8 +1,8 @@
 let modInfo = {
-	name: "The Programming King",
-	id: "codeking",
+	name: "Spider Evolution",
+	id: "spiderevo",
 	author: "DreadRoach",
-	pointsName: "bits",
+	pointsName: "prey",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
@@ -14,13 +14,12 @@ let modInfo = {
 // Set your version in num and name
 let VERSION = {
 	num: "0.01a",
-	name: "the very beginning",
+	name: "a new beginning",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
 	<h3>v0.0</h3><br>
-		- Set up first prestige layer.<br>
-		- Tweaked starting points and disabled offline time.`
+		- Changed mod theme`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
